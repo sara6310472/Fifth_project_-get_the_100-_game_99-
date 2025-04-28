@@ -1,0 +1,118 @@
+.loginFormContainer {
+  max-width: 600px;
+  margin: 60px auto;
+  padding: 30px;
+  background-color: #f5f5f5;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  animation: fadeIn 0.5s ease;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.formTypeToggle {
+  display: flex;
+  margin-bottom: 20px;
+  gap: 10px;
+  justify-content: space-around;
+}
+
+.formTypeToggle button {
+  flex: 1;
+  padding: 12px;
+  border: none;
+  background-color: #f1d8f0;
+  cursor: pointer;
+  border-radius: 8px;
+  font-size: 16px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.formTypeToggle button.active {
+  background-color: #f768a1;
+  color: white;
+}
+
+.formTypeToggle button:hover {
+  background-color: #f768a1;
+  color: white;
+}
+
+.loginForm {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  max-width: 500px;
+  margin: 20px auto;
+  padding: 30px;
+  background-color: #f5f5f5;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  animation: slideIn 0.5s ease;
+  text-align: center;
+}
+
+@keyframes slideIn {
+  0% {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.loginForm input {
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 16px;
+  transition: border-color 0.3s;
+}
+
+.loginForm input:focus {
+  outline: none;
+  border-color: #f768a1;
+}
+
+.loginForm button {
+  padding: 12px;
+  background-color: #f768a1;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s;
+}
+
+.loginForm button:hover {
+  background-color: #be3a6f;
+}
+
+.startGameButton {
+  margin-top: 20px;
+  width: 100%;
+  padding: 12px;
+  background-color: #f62277;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s;
+}
+
+.startGameButton:hover {
+  background-color: #cb0755;
+}

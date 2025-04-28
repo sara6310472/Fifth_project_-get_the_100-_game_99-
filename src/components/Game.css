@@ -1,0 +1,22 @@
+.gameBoardsContainer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  margin-bottom: 30px;
+  animation: fadeIn 0.5s ease;
+}
+
+.backButton {
+  margin-top: 20px;
+  padding: 12px;
+  background-color: #ffffff;
+  color: #f768a1;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s;
+}
+
+

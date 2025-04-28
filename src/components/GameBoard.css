@@ -1,0 +1,93 @@
+.gameBoard {
+  flex: 0 1 300px;
+  padding: 20px;
+  background-color: #f8f0fc;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  opacity: 0.7;
+  transition: opacity 0.3s, box-shadow 0.3s;
+  animation: fadeIn 0.5s ease;
+}
+
+.gameBoard.activeBoard {
+  opacity: 1;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  border: 2px solid #ff6b6b;
+}
+
+.currentNumber {
+  font-size: 48px;
+  margin: 20px 0;
+  color: #f768a1;
+  animation: pulse 1s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.controls {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+  margin: 20px 0;
+}
+
+.controls button,
+.gameEndControls button {
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  background-color: #f768a1;
+  color: white;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s;
+}
+
+.controls button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.controls button:hover,
+.gameEndControls button:hover {
+  background-color: #ff6b6b;
+}
+
+.gameEndControls {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  margin: 20px 0;
+  animation: fadeIn 0.5s ease;
+}
+
+.gameEndControls button:last-child {
+  background-color: #e53935;
+}
+
+.gameEndControls button:last-child:hover {
+  background-color: #c62828;
+}
+
+.moveCounter {
+  font-size: 14px;
+  color: #666;
+  margin-top: 10px;
+}
+
+.playerHistory {
+  font-size: 14px;
+  color: #666;
+  margin-top: 10px;
+}

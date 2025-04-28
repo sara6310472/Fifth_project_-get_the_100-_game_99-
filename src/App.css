@@ -1,0 +1,14 @@
+body {
+  font-family: "Montserrat", sans-serif;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(to right, #f768a1, #ff6b6b);
+  color: #333;
+}
+
+.gameContainer {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  direction: rtl;
+}
